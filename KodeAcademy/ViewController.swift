@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -18,6 +18,14 @@ class ViewController: UIViewController {
     func divide() {
         print(4 / 2)
     }
+
+        // zuhair
+    }
+
+    func substract(){
+        print(2-1)
+    }
+
 
 }
 
