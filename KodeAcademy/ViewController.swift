@@ -12,9 +12,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        divide()
+    }
+
+    func divide() {
+        print(4 / 2)
+    }
+
         // zuhair
     }
-    
     func substract(){
         print(2-1)
     }
@@ -26,6 +32,6 @@ class ViewController: UIViewController {
             print("Odd")
         }
     }
-    
+
 }
 
