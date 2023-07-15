@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     }
 
         // zuhair
-    }
-    func substract(){
-        print(2-1)
+    
+func substract(number1: Int, number2: Int){
+        print("Result is \(number1 + number2)")
     }
 
     func checkEven(num: Int) {
