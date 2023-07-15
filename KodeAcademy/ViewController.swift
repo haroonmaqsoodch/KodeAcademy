@@ -14,9 +14,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         // zuhair
     }
+    
     func substract(){
         print(2-1)
     }
 
+    func checkEven(num: Int) {
+        if num % 2 == 0 {
+            print("Even")
+        } else {
+            print("Odd")
+        }
+    }
+    
 }
 
