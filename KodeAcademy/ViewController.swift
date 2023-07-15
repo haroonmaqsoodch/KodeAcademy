@@ -14,18 +14,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         divide()
     }
-
+    
     func divide() {
         print(4 / 2)
     }
-
-        // zuhair
+    
+    // zuhair
+    
+    func substract(num:Int,numTwo:Int){
+        print(num-numTwo)
     }
-
-    func substract(){
-        print(2-1)
-    }
-
-
 }
+
 
