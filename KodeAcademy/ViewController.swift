@@ -18,12 +18,21 @@ class ViewController: UIViewController {
     func divide() {
         print(4 / 2)
     }
-    
-    // zuhair
+
+    func checkNumber() {
+    }
+    func checkEven(num: Int) {
+        if num % 2 == 0 {
+            print("Even")
+        } else {
+            print("Odd")
+        }
+    }
     
     func substract(num:Int,numTwo:Int){
         print(num-numTwo)
     }
+
 }
 
 
