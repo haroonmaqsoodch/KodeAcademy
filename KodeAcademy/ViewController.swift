@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         print(4 / 2)
     }
 
+    func checkNumber() {
+    }
     func checkEven(num: Int) {
         if num % 2 == 0 {
             print("Even")
