@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         if carName == "BMW" {
             print("hehe")
         } else {
-            "nooooo"
+           print("nooooo")
         }
     }
     
