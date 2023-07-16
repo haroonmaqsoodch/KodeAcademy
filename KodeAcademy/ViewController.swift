@@ -9,46 +9,27 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var numArray: [Int] = [1,2,3,4,5,6,7,8,9,10]
-    var sum = 0
-
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var passField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        sumOfArray()
     }
     
-    func divide() {
-        print(4 / 2)
-    }
+    @IBAction func loginButton(_ sender: Any) {
         
-    func substract(num:Int,numTwo:Int){
-        print(num-numTwo)
-    }
-        
-    func sumOfArray() {
-        for i in numArray {
-            sum += i
-        }
-        print(sum)
-    }
-    
-    func checkColour() {
-        var colour = "Blue"
-        
-        if colour == "Blue" {
-            print("yess")
-        } else {
-            print("no")
-        }
-    }
-    
-    func checkName() {
-        var name = "abc"
-        
-        if name == "abc" {
-            print("yess")
-        }
-    }
+        if let name = nameField.text,
+           let password = passField.text {
+            if !name.isEmpty, !password.isEmpty {
+                let vc = storyboard?.instantiateViewController(identifier: "SecondViewController") as! SecondViewController
+                present(vc, animated: true)
+            } else {
+                nameField.placeholder = "Please enter user name 😡"
+                passField.placeholder = "Please enter password 😡"
+                view.backgroundColor = .red
 
+            }
+        }
+    }
 }
 
