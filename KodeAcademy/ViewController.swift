@@ -14,22 +14,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        divide()
     }
     
-    @IBAction func loginButton(_ sender: Any) {
-        
-        if let name = nameField.text,
-           let password = passField.text {
-            if !name.isEmpty, !password.isEmpty {
-                let vc = storyboard?.instantiateViewController(identifier: "SecondViewController") as! SecondViewController
-                present(vc, animated: true)
-            } else {
-                nameField.placeholder = "Please enter user name 😡"
-                passField.placeholder = "Please enter password 😡"
-                view.backgroundColor = .red
-
-            }
-        }
+    func divide() {
+        print(4 / 2)
+    }
+    
+    // zuhair
+    
+    func substract(num:Int,numTwo:Int){
+        print(num-numTwo)
     }
 }
+
 
