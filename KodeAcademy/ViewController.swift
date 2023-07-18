@@ -23,7 +23,10 @@ class ViewController: UIViewController {
     
     func substract(num:Int,numTwo:Int){
         print(num-numTwo)
+        
+        func addition(numOne:Int,numTwo:Int){
+            print(numOne+numTwo)
+        }
     }
 }
-
 
